@@ -7,14 +7,39 @@
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
-    <Button
-        android:id="@+id/i1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:text="点击这里～～"
-        android:textColor="#fff"
-        android:background="@color/colorPrimaryDark"/>
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/i1"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="拉格朗日"
+                android:textColor="#fff"
+                android:background="@color/colorPrimaryDark"/>
+
+            <Button
+                android:id="@+id/i2"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="数值分析"
+                android:textColor="#fff"
+                android:background="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
